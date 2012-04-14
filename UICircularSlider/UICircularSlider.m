@@ -96,6 +96,14 @@
 	}
 }
 
+@synthesize thumbImage = _thumbImage;
+- (void)setThumbImage:(UIImage *)thumbImage {
+	if (![thumbImage isEqual:_thumbImage]) {
+		_thumbImage = thumbImage;
+		[self setNeedsDisplay];
+	}
+}
+
 @synthesize continuous = _continuous;
 
 @synthesize sliderStyle = _sliderStyle;
@@ -149,15 +157,23 @@
 	return radius;
 }
 - (void)drawThumbAtPoint:(CGPoint)sliderButtonCenterPoint inContext:(CGContextRef)context {
-    [self.thumbTintColor setFill];
+    UIGraphicsPushContext(context);
     
-	UIGraphicsPushContext(context);
-	CGContextBeginPath(context);
-	
-	CGContextMoveToPoint(context, sliderButtonCenterPoint.x, sliderButtonCenterPoint.y);
-	CGContextAddArc(context, sliderButtonCenterPoint.x, sliderButtonCenterPoint.y, kThumbRadius, 0.0, 2*M_PI, NO);
-	
-	CGContextFillPath(context);
+    if (self.thumbImage) {
+        
+        [self.thumbImage drawAtPoint:(CGPoint){.x = sliderButtonCenterPoint.x - (self.thumbImage.size.width/2), .y = sliderButtonCenterPoint.y - (self.thumbImage.size.height/2)}];
+        
+    } else {
+        [self.thumbTintColor setFill];
+        
+        CGContextBeginPath(context);
+        
+        CGContextMoveToPoint(context, sliderButtonCenterPoint.x, sliderButtonCenterPoint.y);
+        CGContextAddArc(context, sliderButtonCenterPoint.x, sliderButtonCenterPoint.y, kThumbRadius, 0.0, 2*M_PI, NO);
+        
+        CGContextFillPath(context);
+    }
+
 	UIGraphicsPopContext();
 }
 
