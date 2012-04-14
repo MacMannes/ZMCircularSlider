@@ -43,6 +43,8 @@
 	[self.circularSlider addTarget:self action:@selector(updateProgress:) forControlEvents:UIControlEventValueChanged];
 	[self.circularSlider setMinimumValue:self.slider.minimumValue];
 	[self.circularSlider setMaximumValue:self.slider.maximumValue];
+//  [self.circularSlider setSliderStyle:UICircularSliderStylePie];
+    [self.circularSlider setThumbImage:[UIImage imageNamed:@"dmc_slider_thumb.png"]];
 }
 
 - (void)viewDidUnload {

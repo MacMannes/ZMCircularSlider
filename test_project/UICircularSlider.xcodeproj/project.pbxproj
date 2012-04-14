@@ -16,6 +16,8 @@
 		5FF75D301500E8B200CFC305 /* UICircularSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF75D2F1500E8B200CFC305 /* UICircularSliderViewController.m */; };
 		5FF75D421500E8F100CFC305 /* UICircularSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF75D411500E8F100CFC305 /* UICircularSliderViewController.xib */; };
 		5FF75D4B1500E94300CFC305 /* UICircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF75D4A1500E94300CFC305 /* UICircularSlider.m */; };
+		8BB2C21E1539215A00309CC9 /* dmc_slider_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB2C21C1539215A00309CC9 /* dmc_slider_thumb.png */; };
+		8BB2C21F1539215A00309CC9 /* dmc_slider_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB2C21D1539215A00309CC9 /* dmc_slider_thumb@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5FF75D411500E8F100CFC305 /* UICircularSliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICircularSliderViewController.xib; sourceTree = "<group>"; };
 		5FF75D491500E94300CFC305 /* UICircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICircularSlider.h; sourceTree = "<group>"; };
 		5FF75D4A1500E94300CFC305 /* UICircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICircularSlider.m; sourceTree = "<group>"; };
+		8BB2C21C1539215A00309CC9 /* dmc_slider_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dmc_slider_thumb.png; sourceTree = "<group>"; };
+		8BB2C21D1539215A00309CC9 /* dmc_slider_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dmc_slider_thumb@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		5FF75D231500E8B200CFC305 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8BB2C21C1539215A00309CC9 /* dmc_slider_thumb.png */,
+				8BB2C21D1539215A00309CC9 /* dmc_slider_thumb@2x.png */,
 				5FF75D241500E8B200CFC305 /* UICircularSlider-Info.plist */,
 				5FF75D281500E8B200CFC305 /* main.m */,
 				5FF75D2A1500E8B200CFC305 /* UICircularSlider-Prefix.pch */,
@@ -167,6 +173,8 @@
 			files = (
 				5FF75D421500E8F100CFC305 /* UICircularSliderViewController.xib in Resources */,
 				5F7A1DA4150E3C4E00284473 /* circularSliderThumbImage.png in Resources */,
+				8BB2C21E1539215A00309CC9 /* dmc_slider_thumb.png in Resources */,
+				8BB2C21F1539215A00309CC9 /* dmc_slider_thumb@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
