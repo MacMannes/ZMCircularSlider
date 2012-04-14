@@ -149,6 +149,8 @@
 	return radius;
 }
 - (void)drawThumbAtPoint:(CGPoint)sliderButtonCenterPoint inContext:(CGContextRef)context {
+    [self.thumbTintColor setFill];
+    
 	UIGraphicsPushContext(context);
 	CGContextBeginPath(context);
 	
@@ -224,7 +226,6 @@
 			break;
 	}
 	
-	[self.thumbTintColor setFill];
 	[self drawThumbAtPoint:self.thumbCenterPoint inContext:context];
 }
 
