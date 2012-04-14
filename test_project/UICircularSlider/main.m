@@ -1,6 +1,6 @@
 //
 //  main.m
-//  UICircularSlider
+//  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
 //  Copyright (c) 2012 Zouhair Mahieddine. All rights reserved.

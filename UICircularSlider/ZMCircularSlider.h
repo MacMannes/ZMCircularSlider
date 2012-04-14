@@ -1,25 +1,25 @@
 //
-///  UICircularSlider.h
-///  UICircularSlider
+///  ZMCircularSlider.h
+///  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
 //  Copyright (c) 2012 Zouhair Mahieddine.
 //  http://www.zedenem.com
 //  
-//  This file is part of the UICircularSlider Library.
+//  This file is part of the ZMCircularSlider Library.
 //  
-//  UICircularProgressView is free software: you can redistribute it and/or modify
+//  ZMCircularSlider is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
 //  the Free Software Foundation, either version 3 of the License, or
 //  (at your option) any later version.
 //  
-//  UICircularProgressView is distributed in the hope that it will be useful,
+//  ZMCircularSlider is distributed in the hope that it will be useful,
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
 //  
 //  You should have received a copy of the GNU General Public License
-//  along with UICircularSlider.  If not, see <http://www.gnu.org/licenses/>.
+//  along with ZMCircularSlider.  If not, see <http://www.gnu.org/licenses/>.
 //
 
 #import <UIKit/UIKit.h>
@@ -31,11 +31,11 @@
  * You can set and retrieve the current style of progress view through the progressViewStyle property.
  */
 typedef enum {
-	UICircularSliderStyleCircle,
-	UICircularSliderStylePie,
-} UICircularSliderStyle;
+	ZMCircularSliderStyleCircle,
+	ZMCircularSliderStylePie,
+} ZMCircularSliderStyle;
 
-@interface UICircularSlider : UIControl
+@interface ZMCircularSlider : UIControl
 
 /**
  * The current value of the receiver.
@@ -96,10 +96,10 @@ typedef enum {
  * The current graphical style of the receiver.
  *
  * The value of this property is a constant that specifies the style of the slider.
- The default style is UICircularSliderStyleCircle.
- * For more on these constants, see UICircularSliderStyle.
+ The default style is ZMCircularSliderStyleCircle.
+ * For more on these constants, see ZMCircularSliderStyle.
  */
-@property (nonatomic) UICircularSliderStyle sliderStyle;
+@property (nonatomic) ZMCircularSliderStyle sliderStyle;
 
 @end
 

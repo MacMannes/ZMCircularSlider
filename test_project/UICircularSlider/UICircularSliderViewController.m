@@ -1,35 +1,35 @@
 //
 //  UICircularSliderViewController.m
-//  UICircularSlider
+//  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
 //  Copyright (c) 2012 Zouhair Mahieddine.
 //  http://www.zedenem.com
 //  
-//  This file is part of the UICircularSlider Library.
+//  This file is part of the ZMCircularSlider Library.
 //  
-//  UICircularProgressView is free software: you can redistribute it and/or modify
+//  ZMCircularSlider is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
 //  the Free Software Foundation, either version 3 of the License, or
 //  (at your option) any later version.
 //  
-//  UICircularProgressView is distributed in the hope that it will be useful,
+//  ZMCircularSlider is distributed in the hope that it will be useful,
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
 //  
 //  You should have received a copy of the GNU General Public License
-//  along with UICircularSlider.  If not, see <http://www.gnu.org/licenses/>.
+//  along with ZMCircularSlider.  If not, see <http://www.gnu.org/licenses/>.
 //
 
 #import "UICircularSliderViewController.h"
-#import "UICircularSlider.h"
+#import "ZMCircularSlider.h"
 
 @interface UICircularSliderViewController ()
 
 @property (unsafe_unretained, nonatomic) IBOutlet UISlider *slider;
 @property (unsafe_unretained, nonatomic) IBOutlet UIProgressView *progressView;
-@property (unsafe_unretained, nonatomic) IBOutlet UICircularSlider *circularSlider;
+@property (unsafe_unretained, nonatomic) IBOutlet ZMCircularSlider *circularSlider;
 
 @end
 
@@ -43,7 +43,7 @@
 	[self.circularSlider addTarget:self action:@selector(updateProgress:) forControlEvents:UIControlEventValueChanged];
 	[self.circularSlider setMinimumValue:self.slider.minimumValue];
 	[self.circularSlider setMaximumValue:self.slider.maximumValue];
-//  [self.circularSlider setSliderStyle:UICircularSliderStylePie];
+//  [self.circularSlider setSliderStyle:ZMCircularSliderStylePie];
     [self.circularSlider setThumbImage:[UIImage imageNamed:@"dmc_slider_thumb.png"]];
 }
 

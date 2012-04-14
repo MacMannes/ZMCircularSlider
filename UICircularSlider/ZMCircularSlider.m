@@ -1,30 +1,30 @@
 //
-//  UICircularSlider.m
-//  UICircularSlider
+//  ZMCircularSlider.m
+//  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
 //  Copyright (c) 2012 Zouhair Mahieddine.
 //  http://www.zedenem.com
 //  
-//  This file is part of the UICircularSlider Library.
+//  This file is part of the ZMCircularSlider Library.
 //  
-//  UICircularProgressView is free software: you can redistribute it and/or modify
+//  ZMCircularSlider is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
 //  the Free Software Foundation, either version 3 of the License, or
 //  (at your option) any later version.
 //  
-//  UICircularProgressView is distributed in the hope that it will be useful,
+//  ZMCircularSlider is distributed in the hope that it will be useful,
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
 //  
 //  You should have received a copy of the GNU General Public License
-//  along with UICircularSlider.  If not, see <http://www.gnu.org/licenses/>.
+//  along with ZMCircularSlider.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "UICircularSlider.h"
+#import "ZMCircularSlider.h"
 
-@interface UICircularSlider()
+@interface ZMCircularSlider()
 
 @property (nonatomic) CGPoint thumbCenterPoint;
 
@@ -43,7 +43,7 @@
 @end
 
 #pragma mark -
-@implementation UICircularSlider
+@implementation ZMCircularSlider
 
 @synthesize value = _value;
 - (void)setValue:(float)value {
@@ -107,7 +107,7 @@
 @synthesize continuous = _continuous;
 
 @synthesize sliderStyle = _sliderStyle;
-- (void)setSliderStyle:(UICircularSliderStyle)sliderStyle {
+- (void)setSliderStyle:(ZMCircularSliderStyle)sliderStyle {
 	if (sliderStyle != _sliderStyle) {
 		_sliderStyle = sliderStyle;
 		[self setNeedsDisplay];
@@ -225,7 +225,7 @@
 	
 	CGFloat radius = [self sliderRadius];
 	switch (self.sliderStyle) {
-		case UICircularSliderStylePie:
+		case ZMCircularSliderStylePie:
 			[self.maximumTrackTintColor setFill];
 			[self drawPieTrack:self.maximumValue atPoint:middlePoint withRadius:radius inContext:context];
 			[self.minimumTrackTintColor setStroke];
@@ -233,7 +233,7 @@
 			[self.minimumTrackTintColor setFill];
 			self.thumbCenterPoint = [self drawPieTrack:self.value atPoint:middlePoint withRadius:radius inContext:context];
 			break;
-		case UICircularSliderStyleCircle:
+		case ZMCircularSliderStyleCircle:
 		default:
 			[self.maximumTrackTintColor setStroke];
 			[self drawCircularTrack:self.maximumValue atPoint:middlePoint withRadius:radius inContext:context];

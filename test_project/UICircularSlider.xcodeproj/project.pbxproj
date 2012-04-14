@@ -15,7 +15,7 @@
 		5FF75D2D1500E8B200CFC305 /* UICircularSliderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF75D2C1500E8B200CFC305 /* UICircularSliderAppDelegate.m */; };
 		5FF75D301500E8B200CFC305 /* UICircularSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF75D2F1500E8B200CFC305 /* UICircularSliderViewController.m */; };
 		5FF75D421500E8F100CFC305 /* UICircularSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FF75D411500E8F100CFC305 /* UICircularSliderViewController.xib */; };
-		5FF75D4B1500E94300CFC305 /* UICircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF75D4A1500E94300CFC305 /* UICircularSlider.m */; };
+		5FF75D4B1500E94300CFC305 /* ZMCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF75D4A1500E94300CFC305 /* ZMCircularSlider.m */; };
 		8BB2C21E1539215A00309CC9 /* dmc_slider_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB2C21C1539215A00309CC9 /* dmc_slider_thumb.png */; };
 		8BB2C21F1539215A00309CC9 /* dmc_slider_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB2C21D1539215A00309CC9 /* dmc_slider_thumb@2x.png */; };
 /* End PBXBuildFile section */
@@ -34,8 +34,8 @@
 		5FF75D2E1500E8B200CFC305 /* UICircularSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICircularSliderViewController.h; sourceTree = "<group>"; };
 		5FF75D2F1500E8B200CFC305 /* UICircularSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICircularSliderViewController.m; sourceTree = "<group>"; };
 		5FF75D411500E8F100CFC305 /* UICircularSliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICircularSliderViewController.xib; sourceTree = "<group>"; };
-		5FF75D491500E94300CFC305 /* UICircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICircularSlider.h; sourceTree = "<group>"; };
-		5FF75D4A1500E94300CFC305 /* UICircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICircularSlider.m; sourceTree = "<group>"; };
+		5FF75D491500E94300CFC305 /* ZMCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMCircularSlider.h; sourceTree = "<group>"; };
+		5FF75D4A1500E94300CFC305 /* ZMCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMCircularSlider.m; sourceTree = "<group>"; };
 		8BB2C21C1539215A00309CC9 /* dmc_slider_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dmc_slider_thumb.png; sourceTree = "<group>"; };
 		8BB2C21D1539215A00309CC9 /* dmc_slider_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dmc_slider_thumb@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +112,8 @@
 		5FF75D471500E92800CFC305 /* UICircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				5FF75D491500E94300CFC305 /* UICircularSlider.h */,
-				5FF75D4A1500E94300CFC305 /* UICircularSlider.m */,
+				5FF75D491500E94300CFC305 /* ZMCircularSlider.h */,
+				5FF75D4A1500E94300CFC305 /* ZMCircularSlider.m */,
 			);
 			name = UICircularSlider;
 			path = ../UICircularSlider;
@@ -188,7 +188,7 @@
 				5FF75D291500E8B200CFC305 /* main.m in Sources */,
 				5FF75D2D1500E8B200CFC305 /* UICircularSliderAppDelegate.m in Sources */,
 				5FF75D301500E8B200CFC305 /* UICircularSliderViewController.m in Sources */,
-				5FF75D4B1500E94300CFC305 /* UICircularSlider.m in Sources */,
+				5FF75D4B1500E94300CFC305 /* ZMCircularSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
