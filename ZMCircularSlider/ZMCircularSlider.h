@@ -101,6 +101,14 @@ typedef enum {
  */
 @property (nonatomic) ZMCircularSliderStyle sliderStyle;
 
+
+/**
+ * Should touches outside of the thumb be responded to?
+ *
+ * The value of this property is a boolean that specifies the response to touches outside of the thumb. The default is NO.
+ */
+@property (readwrite) BOOL ignoreTouchesExceptOnThumb;
+
 @end
 
 

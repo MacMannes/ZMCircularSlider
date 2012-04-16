@@ -106,6 +106,8 @@
 
 @synthesize continuous = _continuous;
 
+@synthesize ignoreTouchesExceptOnThumb = _ignoreTouchesExceptOnThumb;
+
 @synthesize sliderStyle = _sliderStyle;
 - (void)setSliderStyle:(ZMCircularSliderStyle)sliderStyle {
 	if (sliderStyle != _sliderStyle) {
@@ -247,6 +249,11 @@
 
 /** @name Touch management methods */
 #pragma mark - Touch management methods
+
+-(BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+    return (self.ignoreTouchesExceptOnThumb ? [self isPointInThumb:[touch locationInView:self]] : YES);
+}
+
 - (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint tapLocation = [touch locationInView:self];
 	switch (touch.phase) {

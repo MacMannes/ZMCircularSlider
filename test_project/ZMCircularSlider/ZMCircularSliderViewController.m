@@ -45,6 +45,7 @@
 	[self.circularSlider setMaximumValue:self.slider.maximumValue];
     [self updateProgress:(UISlider *)self.circularSlider];
 //  [self.circularSlider setSliderStyle:ZMCircularSliderStylePie];
+    self.circularSlider.ignoreTouchesExceptOnThumb = YES;
     [self.circularSlider setThumbImage:[UIImage imageNamed:@"dmc_slider_thumb.png"]];
 }
 
