@@ -138,13 +138,6 @@
 	self.thumbTintColor = [UIColor darkGrayColor];
 	self.continuous = YES;
 	self.thumbCenterPoint = CGPointZero;
-	
-	UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureHappened:)];
-	[self addGestureRecognizer:tapGestureRecognizer];
-	
-	UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureHappened:)];
-	panGestureRecognizer.maximumNumberOfTouches = panGestureRecognizer.minimumNumberOfTouches;
-	[self addGestureRecognizer:panGestureRecognizer];
 }
 
 /** @name Drawing methods */
@@ -252,12 +245,12 @@
 	return CGRectContainsPoint(thumbTouchRect, point);
 }
 
-/** @name UIGestureRecognizer management methods */
-#pragma mark - UIGestureRecognizer management methods
-- (void)panGestureHappened:(UIPanGestureRecognizer *)panGestureRecognizer {
-	CGPoint tapLocation = [panGestureRecognizer locationInView:self];
-	switch (panGestureRecognizer.state) {
-		case UIGestureRecognizerStateChanged: {
+/** @name Touch management methods */
+#pragma mark - Touch management methods
+- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+    CGPoint tapLocation = [touch locationInView:self];
+	switch (touch.phase) {
+		case UITouchPhaseMoved: {
 			CGFloat radius = [self sliderRadius];
 			CGPoint sliderCenter = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
 			CGPoint sliderStartPoint = CGPointMake(sliderCenter.x, sliderCenter.y - radius);
@@ -276,15 +269,7 @@
 		default:
 			break;
 	}
-}
-- (void)tapGestureHappened:(UITapGestureRecognizer *)tapGestureRecognizer {
-	if (tapGestureRecognizer.state == UIGestureRecognizerStateEnded) {
-		CGPoint tapLocation = [tapGestureRecognizer locationInView:self];
-		if ([self isPointInThumb:tapLocation]) {
-		}
-		else {
-		}
-	}
+    return [super beginTrackingWithTouch:touch withEvent:event];
 }
 
 @end
