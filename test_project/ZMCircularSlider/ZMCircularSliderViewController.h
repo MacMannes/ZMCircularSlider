@@ -1,5 +1,5 @@
 //
-//  UICircularSliderViewController.h
+//  ZMCircularSliderViewController.h
 //  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
@@ -24,6 +24,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UICircularSliderViewController : UIViewController
+@interface ZMCircularSliderViewController : UIViewController
 
 @end

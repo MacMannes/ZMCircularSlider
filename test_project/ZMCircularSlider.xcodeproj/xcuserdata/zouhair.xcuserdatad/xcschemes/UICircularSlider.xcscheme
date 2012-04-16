@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5FF75D171500E8B200CFC305"
-               BuildableName = "UICircularSlider.app"
-               BlueprintName = "UICircularSlider"
-               ReferencedContainer = "container:UICircularSlider.xcodeproj">
+               BuildableName = "ZMCircularSlider.app"
+               BlueprintName = "ZMCircularSlider"
+               ReferencedContainer = "container:ZMCircularSlider.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,9 +32,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FF75D171500E8B200CFC305"
-            BuildableName = "UICircularSlider.app"
-            BlueprintName = "UICircularSlider"
-            ReferencedContainer = "container:UICircularSlider.xcodeproj">
+            BuildableName = "ZMCircularSlider.app"
+            BlueprintName = "ZMCircularSlider"
+            ReferencedContainer = "container:ZMCircularSlider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FF75D171500E8B200CFC305"
-            BuildableName = "UICircularSlider.app"
-            BlueprintName = "UICircularSlider"
-            ReferencedContainer = "container:UICircularSlider.xcodeproj">
+            BuildableName = "ZMCircularSlider.app"
+            BlueprintName = "ZMCircularSlider"
+            ReferencedContainer = "container:ZMCircularSlider.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FF75D171500E8B200CFC305"
-            BuildableName = "UICircularSlider.app"
-            BlueprintName = "UICircularSlider"
-            ReferencedContainer = "container:UICircularSlider.xcodeproj">
+            BuildableName = "ZMCircularSlider.app"
+            BlueprintName = "ZMCircularSlider"
+            ReferencedContainer = "container:ZMCircularSlider.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

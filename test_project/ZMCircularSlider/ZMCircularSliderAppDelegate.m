@@ -1,5 +1,5 @@
 //
-//  UICircularSliderAppDelegate.m
+//  ZMCircularSliderAppDelegate.m
 //  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
@@ -22,11 +22,11 @@
 //  along with ZMCircularSlider.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "UICircularSliderAppDelegate.h"
+#import "ZMCircularSliderAppDelegate.h"
 
-#import "UICircularSliderViewController.h"
+#import "ZMCircularSliderViewController.h"
 
-@implementation UICircularSliderAppDelegate
+@implementation ZMCircularSliderAppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
@@ -35,7 +35,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.viewController = [[UICircularSliderViewController alloc] initWithNibName:@"UICircularSliderViewController" bundle:nil];
+	self.viewController = [[ZMCircularSliderViewController alloc] initWithNibName:@"ZMCircularSliderViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

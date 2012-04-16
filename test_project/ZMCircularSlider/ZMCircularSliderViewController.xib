@@ -177,7 +177,7 @@
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">UICircularSliderViewController</string>
+				<string key="-1.CustomClassName">ZMCircularSliderViewController</string>
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -196,25 +196,25 @@
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
-					<string key="className">UICircularSlider</string>
+					<string key="className">ZMCircularSlider</string>
 					<string key="superclassName">UIControl</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/UICircularSlider.h</string>
+						<string key="minorKey">./Classes/ZMCircularSlider.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">UICircularSliderViewController</string>
+					<string key="className">ZMCircularSliderViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="circularSlider">UICircularSlider</string>
+						<string key="circularSlider">ZMCircularSlider</string>
 						<string key="progressView">UIProgressView</string>
 						<string key="slider">UISlider</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="circularSlider">
 							<string key="name">circularSlider</string>
-							<string key="candidateClassName">UICircularSlider</string>
+							<string key="candidateClassName">ZMCircularSlider</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="progressView">
 							<string key="name">progressView</string>
@@ -227,7 +227,7 @@
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/UICircularSliderViewController.h</string>
+						<string key="minorKey">./Classes/ZMCircularSliderViewController.h</string>
 					</object>
 				</object>
 			</array>

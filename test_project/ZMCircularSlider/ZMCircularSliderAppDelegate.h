@@ -1,5 +1,5 @@
 //
-//  UICircularSliderAppDelegate.h
+//  ZMCircularSliderAppDelegate.h
 //  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
@@ -24,12 +24,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class UICircularSliderViewController;
+@class ZMCircularSliderViewController;
 
-@interface UICircularSliderAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ZMCircularSliderAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) UICircularSliderViewController *viewController;
+@property (strong, nonatomic) ZMCircularSliderViewController *viewController;
 
 @end

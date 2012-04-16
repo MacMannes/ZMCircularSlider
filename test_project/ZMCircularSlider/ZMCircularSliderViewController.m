@@ -1,5 +1,5 @@
 //
-//  UICircularSliderViewController.m
+//  ZMCircularSliderViewController.m
 //  ZMCircularSlider
 //
 //  Created by Zouhair Mahieddine on 02/03/12.
@@ -22,10 +22,10 @@
 //  along with ZMCircularSlider.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#import "UICircularSliderViewController.h"
+#import "ZMCircularSliderViewController.h"
 #import "ZMCircularSlider.h"
 
-@interface UICircularSliderViewController ()
+@interface ZMCircularSliderViewController ()
 
 @property (unsafe_unretained, nonatomic) IBOutlet UISlider *slider;
 @property (unsafe_unretained, nonatomic) IBOutlet UIProgressView *progressView;
@@ -33,7 +33,7 @@
 
 @end
 
-@implementation UICircularSliderViewController
+@implementation ZMCircularSliderViewController
 @synthesize slider = _slider;
 @synthesize progressView = _progressView;
 @synthesize circularSlider = _circularSlider;

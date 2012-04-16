@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "UICircularSliderAppDelegate.h"
+#import "ZMCircularSliderAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([UICircularSliderAppDelegate class]));
+	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([ZMCircularSliderAppDelegate class]));
 	}
 }
