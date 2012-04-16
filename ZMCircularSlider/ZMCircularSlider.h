@@ -88,7 +88,7 @@ typedef enum {
  * If NO, the slider only sends an action event when the user releases the slider’s thumb control to set the final value.
  * The default value of this property is YES.
  *
- * @warning Not implemented Yet.
+ * @warning Not implemented Yet. Currently always continuous.
  */
 @property(nonatomic, getter=isContinuous) BOOL continuous;
 
